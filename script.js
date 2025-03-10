@@ -53,20 +53,24 @@ console.log(teamMembers);
   </div>
 </div> */
 
+// Elemento html
+
 const parentElement = document.querySelector('.row');
 
-let memberElement = '';
+let memberElements = '';
 
 for (let i = 0; i < teamMembers.length; i++) {
 
   const currentElement = teamMembers[i];
   console.log(currentElement);
-  memberElement += createHTMLElement(currentElement);
+  memberElements += createHTMLElement(currentElement);
 }
 
-console.log(memberElement);
+console.log(memberElements);
 
-parentElement.innerHTML = memberElement;
+parentElement.innerHTML = memberElements;
+
+// Aggiungere elementi Html
 
 function createHTMLElement (obj) {
 
