@@ -1,3 +1,63 @@
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.bcontainer {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* Intestazione */
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 h1 {
-    color: fuchsia;
+    color: #e53170;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+/* Member info and photo */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.col {
+    width: calc((100% - 80px) / 3);
+    flex-shrink: 0;
+    display: flex;
+}
+
+.member-photo {
+    width: 30%;
+}
+
+.member-info {
+    width: 70%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 30px;
 }
